@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Portafolio – Yossiam Alfredo Sauceda Espericueta</title>
+  <link rel="stylesheet" href="estilos.css"/>
+  <meta name="description" content="Portafolio de Yossiam Alfredo Sauceda Espericueta, Desarrollador Back-End."/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="dot" aria-hidden="true"></span> <span>Yossiam</span>
+      </a>
+      <div class="menu" role="menubar">
+        <a href="#sobre-mi" role="menuitem">Sobre mí</a>
+        <a href="#habilidades" role="menuitem">Habilidades</a>
+        <a href="#proyectos" role="menuitem">Proyectos</a>
+        <a href="#certificaciones" role="menuitem">Certificaciones</a>
+        <a href="#contacto" role="menuitem">Contáctame</a>
+        <a href="index-en.html" aria-label="Switch to English">EN</a>
+        <a href="index-fr.html" aria-label="Basculer en Français">FR</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+      </button>
+    </nav>
+    <div class="drawer" id="drawer">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#certificaciones">Certificaciones</a>
+      <a href="#contacto">Contáctame</a>
+      <div style="display:flex; gap:12px; padding:10px 4px">
+        <a href="index-en.html">EN</a> • <a href="index-fr.html">FR</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="hero-terminal" class="hero-terminal">
+  <canvas id="particlesCanvas"></canvas>
+  <canvas id="codeCanvas"></canvas>
+
+  <section class="hero-content">
+    <h1 class="hero-title">Yossiam Alfredo Sauceda Espericueta</h1>
+    <h2 class="hero-subtitle">Desarrollador Back-End</h2>
+  </section>
+</main>
+
+
+  <div class="section" id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <div class="about">
+      <img src="fotos/fotocurri.png" alt="Retrato de Yossiam trabajando"/>
+      <div>
+        <p>Soy alumno de la Universidad Politécnica de Sinaloa. Disfruto programar, aprender nuevas tecnologías y resolver problemas complejos con soluciones simples.</p>
+        <p>Enfoco mi trabajo en arquitectura limpia, pruebas automatizadas y buenas prácticas de despliegue.</p>
+        <a class="btn" href="docs/cv-es.pdf" download>Descargar CV</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="habilidades">
+    <h2>Habilidades técnicas</h2>
+
+    <h3>Lenguajes</h3>
+    <div class="grid skills">
+      <div class="skill"><img src="fotos/python.png" alt="Python"><span>Python</span></div>
+      <div class="skill"><img src="fotos/js.png" alt="JavaScript"><span>JavaScript</span></div>
+      <div class="skill"><img src="fotos/sql.png" alt="SQL"><span>SQL</span></div>
+    </div>
+
+    <h3>Frameworks</h3>
+    <div class="grid skills">
+      <div class="skill"><img src="fotos/django.png" alt="Django"><span>Django</span></div>
+      <div class="skill"><img src="fotos/fastapi.png" alt="FastAPI"><span>FastAPI</span></div>
+      <div class="skill"><img src="fotos/node.png" alt="Node.js"><span>Node.js</span></div>
+    </div>
+
+    <h3>Herramientas</h3>
+    <div class="grid skills">
+      <div class="skill"><img src="fotos/docker.png" alt="Docker"><span>Docker</span></div>
+      <div class="skill"><img src="fotos/git.png" alt="Git"><span>Git</span></div>
+      <div class="skill"><img src="fotos/Postgresql.png" alt="PostgreSQL"><span>PostgreSQL</span></div>
+    </div>
+  </div>
+
+  <div class="section" id="proyectos">
+    <h2>Proyectos destacados</h2>
+    <div class="grid projects">
+      <article class="card">
+        <img src="img/projects/p1.jpg" alt="Captura del Proyecto 1">
+        <div class="content">
+          <h3>Proyecto 1 – API de Pagos</h3>
+          <p>Microservicio de pagos con autenticación JWT, colas y observabilidad.</p>
+          <div class="actions">
+            <a class="btn" href="docs/proyecto1.pdf" download>⬇ Presentación</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/projects/p2.jpg" alt="Captura del Proyecto 2">
+        <div class="content">
+          <h3>Proyecto 2 – Plataforma de Reportes</h3>
+          <p>Ingesta ETL y dashboards con permisos por rol y auditoría.</p>
+          <div class="actions">
+            <a class="btn" href="docs/proyecto2.pdf" download>⬇ Presentación</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="section" id="certificaciones">
+    <h2>Certificaciones</h2>
+    <div class="grid projects">
+      <article class="card">
+        <img class="lb" src="img/certs/c1.jpg" alt="Certificación 1" data-full="img/certs/c1.jpg">
+        <div class="content">
+          <h3>Certificación 1</h3>
+          <p>Descripción breve de la certificación y competencias adquiridas.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img class="lb" src="img/certs/c2.jpg" alt="Certificación 2" data-full="img/certs/c2.jpg">
+        <div class="content">
+          <h3>Certificación 2</h3>
+          <p>Descripción breve de la certificación y competencias adquiridas.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="section" id="contacto">
+    <h2>Contáctame</h2>
+    <p class="lead">Estas son mis redes y formas de contacto:</p>
+    <div class="contact">
+      <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener"><span class="icon"></span> LinkedIn</a>
+      <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener"><span class="icon"></span> GitHub</a>
+      <a class="icon-btn" href="mailto:tuemail@gmail.com"><span class="icon"></span> Gmail</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © <span id="year"></span> Yossiam Alfredo Sauceda Espericueta — Back-End Dev
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="lbClose" aria-label="Cerrar">✕</button>
+    <img id="lbImg" alt="Vista ampliada"/>
+  </div>
+
+<script>
+// ==== CANVAS: RED DIGITAL CON PULSO DE ENERGÍA ====
+const particlesCanvas = document.getElementById("particlesCanvas");
+const ctx = particlesCanvas.getContext("2d");
+
+let width = (particlesCanvas.width = window.innerWidth);
+let height = (particlesCanvas.height = window.innerHeight);
+
+// Crear partículas de distintos tamaños y velocidades
+let particles = Array.from({ length: 120 }, () => ({
+  x: Math.random() * width,
+  y: Math.random() * height,
+  size: Math.random() * 5 + 1.5,
+  speedX: (Math.random() - 0.5) * 1.2,
+  speedY: (Math.random() - 0.5) * 1.2,
+  glow: Math.random() > 0.85,
+  opacity: 0.4 + Math.random() * 0.6,
+}));
+
+// Pulso dinámico
+let pulse = 0;
+let pulseSpeed = 0.02;
+
+// Clic: crear nuevas partículas tipo “nodos energéticos”
+window.addEventListener("click", (e) => {
+  for (let i = 0; i < 6; i++) {
+    particles.push({
+      x: e.clientX + (Math.random() - 0.5) * 20,
+      y: e.clientY + (Math.random() - 0.5) * 20,
+      size: Math.random() * 6 + 3,
+      speedX: (Math.random() - 0.5) * 2,
+      speedY: (Math.random() - 0.5) * 2,
+      glow: true,
+      opacity: 1,
+    });
+  }
+  if (particles.length > 300) particles.splice(0, 50);
+});
+
+// Dibujar partículas y conexiones con pulso
+function drawParticles() {
+  ctx.clearRect(0, 0, width, height);
+
+  pulse += pulseSpeed;
+  if (pulse > Math.PI * 2) pulse = 0;
+
+  for (let i = 0; i < particles.length; i++) {
+    const p = particles[i];
+
+    // Movimiento y rebote
+    p.x += p.speedX;
+    p.y += p.speedY;
+    if (p.x - p.size < 0 || p.x + p.size > width) p.speedX *= -1;
+    if (p.y - p.size < 0 || p.y + p.size > height) p.speedY *= -1;
+
+    // Brillo radial del nodo
+    const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size * 3);
+    gradient.addColorStop(0, `rgba(106,166,255,${p.opacity})`);
+    gradient.addColorStop(1, "rgba(106,166,255,0)");
+    ctx.fillStyle = gradient;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Parpadeo
+    if (p.glow && Math.random() > 0.985) {
+      ctx.shadowColor = "rgba(106,166,255,0.9)";
+      ctx.shadowBlur = 20;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+
+    // Conexiones con partículas cercanas
+    for (let j = i + 1; j < particles.length; j++) {
+      const q = particles[j];
+      const dx = p.x - q.x;
+      const dy = p.y - q.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 140) {
+        // Pulso dinámico (energía viajando)
+        const pulseEffect = (Math.sin(pulse + dist * 0.03) + 1) / 2;
+        const alpha = 0.1 + (140 - dist) / 900;
+        const brightness = 0.2 + pulseEffect * 0.3;
+        ctx.strokeStyle = `rgba(106,166,255,${alpha + brightness * 0.1})`;
+        ctx.lineWidth = 1.2;
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(q.x, q.y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+// Animación continua
+let animating = true;
+function animate() {
+  if (animating) drawParticles();
+  requestAnimationFrame(animate);
+}
+animate();
+
+// Redimensionar canvas
+window.addEventListener("resize", () => {
+  width = particlesCanvas.width = window.innerWidth;
+  height = particlesCanvas.height = window.innerHeight;
+});
+
+// Pausar según scroll
+window.addEventListener("scroll", () => {
+  const hero = document.getElementById("hero-terminal");
+  const rect = hero.getBoundingClientRect();
+  const visible = rect.top < window.innerHeight && rect.bottom > 0;
+  animating = visible;
+});
+</script>
+
+
+
+</body>
+</html>
