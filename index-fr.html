@@ -1,92 +1,91 @@
 <!doctype html>
-<html lang="es">
+<html lang="fr">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Portafolio – Yossiam Alfredo Sauceda Espericueta</title>
-  <meta name="description" content="Portafolio de Yossiam Alfredo Sauceda Espericueta, Desarrollador Back-End.">
+  <title>Portfolio – Yossiam Alfredo Sauceda Espericueta</title>
+  <meta name="description" content="Portfolio de Yossiam Alfredo Sauceda Espericueta, Développeur Back-End.">
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- ========= HEADER ========= -->
+  <!-- ========= EN-TÊTE ========= -->
   <header class="header">
-    <nav class="nav" aria-label="Principal">
-      <a class="brand" href="#top" aria-label="Inicio">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Accueil">
         <span class="dot" aria-hidden="true"></span> <span>Yossiam</span>
       </a>
 
       <div class="menu" role="menubar">
-        <a href="#sobre-mi" role="menuitem">Sobre mí</a>
-        <a href="#habilidades" role="menuitem">Habilidades</a>
-        <a href="#proyectos" role="menuitem">Proyectos</a>
-        <a href="#certificaciones" role="menuitem">Certificaciones</a>
-        <a href="#contacto" role="menuitem">Contáctame</a>
+        <a href="#about" role="menuitem">À propos</a>
+        <a href="#skills" role="menuitem">Compétences</a>
+        <a href="#projects" role="menuitem">Projets</a>
+        <a href="#certifications" role="menuitem">Certifications</a>
+        <a href="#contact" role="menuitem">Contact</a>
+        <a href="index.html">ES</a>
         <a href="index-en.html">EN</a>
-        <a href="index-fr.html">FR</a>
       </div>
 
-      <!-- 🔹 Botón hamburguesa con tres barras -->
+      <!-- 🔹 Bouton hamburger -->
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-
     </nav>
 
-    <!-- 🔹 Menú móvil -->
+    <!-- 🔹 Menu mobile -->
     <div class="drawer">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#certificaciones">Certificaciones</a>
-      <a href="#contacto">Contáctame</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
       <div style="display:flex; gap:12px; padding:10px 4px">
-        <a href="index-en.html">EN</a> • <a href="index-fr.html">FR</a>
+        <a href="index.html">ES</a> • <a href="index-en.html">EN</a>
       </div>
     </div>
   </header>
 
-  <!-- ========= HERO ========= -->
+  <!-- ========= HÉROS ========= -->
   <main id="hero-terminal" class="hero-terminal">
     <canvas id="particlesCanvas"></canvas>
     <canvas id="codeCanvas"></canvas>
 
     <section class="hero-content">
       <h1 class="hero-title">Yossiam Alfredo Sauceda Espericueta</h1>
-      <h2 class="hero-subtitle">Desarrollador Back-End</h2>
+      <h2 class="hero-subtitle">Développeur Back-End</h2>
     </section>
   </main>
 
-  <!-- ========= SOBRE MÍ ========= -->
-  <section class="section" id="sobre-mi">
-    <h2>Sobre mí</h2>
+  <!-- ========= À PROPOS ========= -->
+  <section class="section" id="about">
+    <h2>À propos</h2>
     <div class="about improved-about">
       <div class="photo-container">
-        <img src="fotos/fotocurri.png" alt="Retrato de Yossiam trabajando">
+        <img src="fotos/fotocurri.png" alt="Portrait de Yossiam au travail">
       </div>
       <div class="about-text">
         <p>
-          Soy alumno de la Universidad Politécnica de Sinaloa. Me apasiona la programación, 
-          el aprendizaje continuo y el desarrollo de soluciones eficientes. 
-          Disfruto trabajar en proyectos que combinan lógica, estructura y creatividad.
+          Je suis étudiant à l’Université Polytechnique de Sinaloa. Passionné par la programmation, 
+          l’apprentissage continu et le développement de solutions efficaces, 
+          j’aime travailler sur des projets qui allient logique, structure et créativité.
         </p>
         <p>
-          Mi enfoque principal es el desarrollo Back-End, aplicando buenas prácticas, 
-          arquitectura limpia y automatización de procesos para obtener resultados profesionales.
+          Mon principal domaine d’intérêt est le développement Back-End, en appliquant de bonnes pratiques, 
+          une architecture propre et l’automatisation des processus pour obtenir des résultats professionnels.
         </p>
-        <a class="btn cv-btn" href="docs/cv-es.pdf" download>Descargar CV</a>
+        <a class="btn cv-btn" href="docs/cv-fr.pdf" download>Télécharger le CV</a>
       </div>
     </div>
   </section>
 
-  <!-- ========= HABILIDADES ========= -->
-  <section class="section" id="habilidades">
-    <h2>Habilidades técnicas</h2>
+  <!-- ========= COMPÉTENCES ========= -->
+  <section class="section" id="skills">
+    <h2>Compétences techniques</h2>
 
-    <h3>Lenguajes</h3>
+    <h3>Langages</h3>
     <div class="grid skills">
       <div class="skill" data-skill="95">
         <img src="fotos/python.png" alt="Python">
@@ -158,7 +157,7 @@
       </div>
     </div>
 
-    <h3>Herramientas</h3>
+    <h3>Outils</h3>
     <div class="grid skills">
       <div class="skill" data-skill="80">
         <img src="fotos/docker.png" alt="Docker">
@@ -195,54 +194,54 @@
     </div>
   </section>
 
-  <!-- ========= PROYECTOS ========= -->
-  <section class="section" id="proyectos">
-    <h2>Proyectos destacados</h2>
+  <!-- ========= PROJETS ========= -->
+  <section class="section" id="projects">
+    <h2>Projets principaux</h2>
     <div class="grid projects">
       <article class="card">
-        <img src="fotos/pescatlan.jpg" alt="Proyecto Pescatlán">
+        <img src="fotos/pescatlan.jpg" alt="Projet Pescatlán">
         <div class="content">
-          <h3>Proyecto 1 – Pescatlán</h3>
-          <p>Aplicación móvil para modernizar la pesca comercial y hacerla más rápida, ordenada y rentable para pescadores, cooperativas y compradores.</p>
+          <h3>Projet 1 – Pescatlán</h3>
+          <p>Application mobile pour moderniser la pêche commerciale et la rendre plus rapide, organisée et rentable pour les pêcheurs, les coopératives et les acheteurs.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="fotos/madera.png" alt="Proyecto Madera_">
+        <img src="fotos/madera.png" alt="Projet Madera_">
         <div class="content">
-          <h3>Proyecto 2 – Sitio Web Madera_</h3>
-          <p>Plataforma web para gestión de cotizaciones, control de usuarios y seguimiento comercial con procesos ETL y paneles de análisis.</p>
+          <h3>Projet 2 – Site Web Madera_</h3>
+          <p>Plateforme web pour la gestion des devis, le contrôle des utilisateurs et le suivi commercial avec des processus ETL et des tableaux d'analyse.</p>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- ========= CERTIFICACIONES ========= -->
-  <section class="section" id="certificaciones">
-    <h2>Certificaciones</h2>
+  <!-- ========= CERTIFICATIONS ========= -->
+  <section class="section" id="certifications">
+    <h2>Certifications</h2>
     <div class="grid projects">
       <article class="card">
-        <img class="lb" src="fotos/mysqlcertifi.png" alt="Certificación MySQL" data-full="fotos/mysqlcertifi.png">
+        <img class="lb" src="fotos/mysqlcertifi.png" alt="Certification MySQL" data-full="fotos/mysqlcertifi.png">
         <div class="content">
-          <h3>Certificación 1</h3>
-          <p>Certificado de 40 horas que valida el dominio de PHP y MySQL para el desarrollo Back-End y la gestión de bases de datos, esencial para la creación de aplicaciones web dinámicas y robustas.</p>
+          <h3>Certification 1</h3>
+          <p>Certificat de 40 heures validant la maîtrise de PHP et MySQL pour le développement Back-End et la gestion de bases de données, essentiel pour la création d'applications web dynamiques et robustes.</p>
         </div>
       </article>
 
       <article class="card">
-        <img class="lb" src="fotos/ciscocertificate.png" alt="Certificación Cisco" data-full="fotos/ciscocertificate.png">
+        <img class="lb" src="fotos/ciscocertificate.png" alt="Certification Cisco" data-full="fotos/ciscocertificate.png">
         <div class="content">
-          <h3>Certificación 2</h3>
-          <p>Acreditación de la Cisco Networking Academy en fundamentos de redes, que demuestra competencia en la simulación y configuración de dispositivos de red (routers y switches) y el uso de la herramienta Cisco Packet Tracer.</p>
+          <h3>Certification 2</h3>
+          <p>Accréditation de la Cisco Networking Academy sur les fondamentaux des réseaux, démontrant la compétence dans la configuration des routeurs et commutateurs à l'aide de Cisco Packet Tracer.</p>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- ========= CONTACTO ========= -->
-  <section class="section" id="contacto">
-    <h2>Contáctame</h2>
-    <p class="lead">Estas son mis redes y formas de contacto:</p>
+  <!-- ========= CONTACT ========= -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p class="lead">Voici mes réseaux et moyens de contact :</p>
     <div class="contact">
       <a class="icon-btn" href="https://www.linkedin.com/in/yossiam-alfredo-sauceda-espericueta-619166316" target="_blank" rel="noopener">
         <i class="fab fa-linkedin"></i> LinkedIn
@@ -253,30 +252,28 @@
       </a>
 
       <a class="icon-btn"
-         href="https://mail.google.com/mail/?view=cm&fs=1&to=yossiamsauceda2005@gmail.com&su=Contacto%20desde%20tu%20portafolio&body=Hola%20Yossiam,%20he%20visto%20tu%20portafolio."
+         href="https://mail.google.com/mail/?view=cm&fs=1&to=yossiamsauceda2005@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Yossiam,%20j'ai%20vu%20votre%20portfolio."
          target="_blank" rel="noopener noreferrer">
-        <i class="fa-solid fa-envelope"></i> Enviar correo
+        <i class="fa-solid fa-envelope"></i> Envoyer un e-mail
       </a>
     </div>
   </section>
 
-  <!-- ========= FOOTER ========= -->
+  <!-- ========= PIED DE PAGE ========= -->
   <footer class="footer">
-    © <span id="year"></span> Yossiam Alfredo Sauceda Espericueta — Back-End Dev
+    © <span id="year"></span> Yossiam Alfredo Sauceda Espericueta — Développeur Back-End
   </footer>
 
   <!-- ========= LIGHTBOX ========= -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="close" id="lbClose" aria-label="Cerrar">✕</button>
-    <img id="lbImg" alt="Vista ampliada">
+    <button class="close" id="lbClose" aria-label="Fermer">✕</button>
+    <img id="lbImg" alt="Vue agrandie">
   </div>
 
   <!-- ========= SCRIPTS ========= -->
   <script src="scripts.js"></script>
-  
 
-
-<!-- ==== Fondo de partículas grandes, con rebote e interacción ==== -->
+  <!-- ==== Fondo de partículas grandes, con rebote e interacción ==== -->
 <script>
 const canvas = document.getElementById("particlesCanvas");
 if (canvas) {
@@ -445,6 +442,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
-  
+
+
 </body>
 </html>
